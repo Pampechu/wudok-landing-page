@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wudok</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              transparent: "transparent",
+              current: "currentColor",
+              wudokblack: "#123B59",
+              wudokblackcontrast: "#1256E5",
+              wudokligth: "#E0F5FF",
+              wudokligthcontrast: "#56AFFF",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="min-h-screen bg-wudokligth dark:bg-wudokblack dark:text-wudokligth"
+  >
+    <header
+      class="bg-wudokligth text-wudokblack dark:bg-wudokblack sticky top-0 z-10 dark:text-wudokligth"
+    >
+      <section
+        class="mx-auto p-4 flex justify-between items-center shadow-md shadow-wudokligthcontrast w-full"
+      >
+        <h1 class="text-lg font-medium">
+          <a href="#hero">
+            <svg
+              class="w-36 h-16"
+              id="Layer_2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 378.92 125.93"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="106.65"
+                  y1="47.75"
+                  x2="145.13"
+                  y2="47.75"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#56afff" />
+                  <stop offset="1" stop-color="#56afff" />
+                </linearGradient>
+                <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+                  <feOffset />
+                  <feGaussianBlur result="blur" stdDeviation="5" />
+                  <feFlood flood-color="#164968" flood-opacity=".7" />
+                  <feComposite in2="blur" operator="in" />
+                  <feComposite in="SourceGraphic" />
+                </filter>
+                <style>
+                  .cls-2 {
+                    fill: #e0f5ff;
+                  }
+                </style>
+              </defs>
+              <g id="Layer_1-2">
+                <rect
+                  width="378.92"
+                  height="125.93"
+                  rx="29.25"
+                  ry="29.25"
+                  style="fill: #123b59"
+                />
+                <g style="filter: url(#drop-shadow-1)">
+                  <path
+                    class="cls-2"
+                    d="M203.91 53.11v23.23c0 4.56-1.01 7.91-3.02 10.04-2.01 2.13-5.12 3.2-9.32 3.2s-7.31-1.07-9.32-3.2c-2.01-2.13-3.02-5.48-3.02-10.04V53.11c0-2.09-1.69-3.79-3.79-3.79h-2.7v28.46c0 3.84.73 7.08 2.21 9.73 1.47 2.64 3.62 4.65 6.44 6.03 2.82 1.38 6.21 2.07 10.18 2.07 6 0 10.64-1.55 13.91-4.64 3.27-3.09 4.91-7.49 4.91-13.19V49.32h-2.7c-2.09 0-3.79 1.69-3.79 3.79ZM255.15 34.11v17.1c-.64-.24-1.32-.48-2.07-.71-1.74-.54-3.51-.99-5.31-1.35-1.8-.36-3.36-.54-4.68-.54-6.9 0-12.05 2.03-15.44 6.08-3.39 4.05-5.09 9.56-5.09 16.52 0 5.16.68 9.35 2.03 12.56 1.35 3.21 3.09 5.67 5.22 7.38s4.4 2.88 6.8 3.51c2.4.63 4.68.95 6.84.95 1.86 0 3.84-.17 5.94-.5 2.1-.33 4.08-.84 5.94-1.53 1.86-.69 3.38-1.62 4.55-2.79s1.76-2.6 1.76-4.28V30.32h-2.7c-2.09 0-3.79 1.69-3.79 3.79Zm0 51.78c0 1.08-1.16 1.98-3.47 2.7-2.31.72-5.03 1.08-8.15 1.08-3.9 0-6.87-.87-8.92-2.61-2.04-1.74-3.42-4.01-4.14-6.8-.72-2.79-1.08-5.81-1.08-9.05s.46-6.2 1.4-8.69c.93-2.49 2.4-4.44 4.41-5.85 2.01-1.41 4.64-2.12 7.88-2.12 1.92 0 3.95.26 6.08.77s4.13 1.31 5.99 2.39V85.9ZM306.21 51.44c-3.06-1.95-7.02-2.93-11.89-2.93-6.54 0-11.6 1.95-15.17 5.85-3.57 3.9-5.36 9.76-5.36 17.56s1.7 13.25 5.09 17.43c3.39 4.17 8.6 6.26 15.62 6.26 6.6 0 11.69-2.1 15.26-6.3 3.57-4.2 5.36-10 5.36-17.38 0-4.68-.72-8.78-2.16-12.29-1.44-3.51-3.69-6.24-6.75-8.19Zm1.13 29.45c-.87 2.67-2.33 4.8-4.37 6.39-2.04 1.59-4.89 2.39-8.56 2.39-5.22 0-8.89-1.64-10.99-4.91-2.1-3.27-3.15-7.55-3.15-12.83 0-3.3.43-6.26 1.31-8.87.87-2.61 2.33-4.7 4.37-6.26 2.04-1.56 4.86-2.34 8.46-2.34s6.35.72 8.42 2.16 3.56 3.47 4.46 6.08 1.35 5.69 1.35 9.23c0 3.3-.44 6.29-1.31 8.96ZM359.11 89.96 338.1 68.81l17.05-15.07c1.74-1.54.65-4.41-1.67-4.41h-.46c-.63 0-1.24.24-1.7.66l-17.56 16.03V36c0-2.09-1.69-3.79-3.79-3.79h-2.7v58.26c0 2.09 1.69 3.79 3.79 3.79h2.7V73.04L354 93.51c.47.48 1.12.75 1.79.75h1.53c2.24 0 3.37-2.71 1.79-4.3ZM160.29 17.85s2.85 33.86-2.43 49.36c-4.34 12.75-23.17 33.12-29.72 39.95-1.2 1.25-3.2 1.22-4.37-.06-10.04-11.05-24.85-25.44-29.76-39.89-.39-1.15-.75-2.32-1.08-3.5-.82-2.89-4.95-2.88-5.75.01-.33 1.18-.68 2.34-1.07 3.49C81.2 81.65 66.4 96.05 56.35 107.1c-1.17 1.28-3.17 1.31-4.37.06-6.54-6.82-25.38-27.19-29.72-39.95-5.27-15.5-2.43-49.36-2.43-49.36 3.78 3.36 8.43 14.29 11.78 18.32 2.68 3.23 4.48 7.18 7.25 9.46 3.49 2.88 15.27 2.49 15.27 2.49h.09s11.78.39 15.28-2.49c2.75-2.27 4.54-6.17 7.19-9.38.04-.05.08-.1.12-.16L88.2 19.87c.73-1.04 2.27-1.07 3.03-.04l12.14 16.34c2.68 3.23 4.48 7.18 7.25 9.46.2.17.43.32.69.47 1.99 2.48 7.96 4.64 14.77 4.64s12.27-2.12 14.32-4.55c.32-.17.61-.36.85-.56 2.77-2.28 4.57-6.23 7.25-9.46 3.35-4.03 8-14.96 11.78-18.32Z"
+                  />
+                  <path
+                    d="M125.89 44.57c-7.25 0-13.92.87-19.24 2.31 5.32 2.06 11.99 4.04 19.24 4.04s13.92-1.98 19.24-4.04c-5.32-1.45-11.99-2.31-19.24-2.31Z"
+                    style="fill: url(#linear-gradient)"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+        </h1>
+        <div>
+          <button
+            id="mobile-open-button"
+            class="text-3xl sm:hidden focus:outline-none"
+          >
+            &#9776;
+          </button>
+          <nav
+            class="hidden font-extralight sm:block space-x-8 text-xl"
+            aria-label="main"
+          >
+            <a href="#about" class="hover:opacity-70">About Us</a>
+            <a href="#clients" class="hover:opacity-70">Our Clients</a>
+            <a href="#contact" class="hover:opacity-70">Contact Us</a>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+      <section
+        id="hero"
+        class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-12 scrollw-mt-60"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold text-center sn:text-5xl sm:text-left text-wudokblack dark:text-wudokligth"
+          >
+            Coding with<span
+              class="text-wudokblackcontrast dark:text-wudokligthcontrast"
+            >
+              souls...
+            </span>
+          </h2>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            We are building code for the next century today. From Colombia to
+            the world and beyond...
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            Think Wudok.
+          </p>
+        </article>
+        <img class="w-1/2" src="./img/WudokHero.png" alt="WudokHero" />
+      </section>
+      <hr class="mx-auto bg-wudokblack dark:bg-wudokligth w-1/2" />
+      <section id="about" class="p-6 my-12 scroll-mt-20">
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-wudokblack dark:text-wudokligth"
+        >
+          About Us
+        </h2>
+        <ul
+          class="list-none my-12 mx-auto flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border-border-solid border-wudokligth dark:border-wudokligth dark:bg-wudokblack py-6 px-2 rounded-3xl shadow-md shadow-wudokligthcontrast"
+          >
+            <img
+              src="./img/WudokHero.png"
+              alt="transparency"
+              class="w-1/2 mb-6"
+            />
+            <h3
+              class="text-3xl text-center text-wudokblack dark:text-wudokligth"
+            >
+              Transparency
+            </h3>
+            <p
+              class="hidden sm:block mt-2 text-xl text-center text-wudokblack dark:text-wudokligthcontrast"
+            >
+              All around the proccess
+            </p>
+            <p
+              class="sm:hidden text-xl mt-2 text-center text-wudokblack dark:text-wudokligthcontrast"
+            >
+              All around the proccess
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border-border-solid border-wudokligth dark:border-wudokligth dark:bg-wudokblack py-6 px-2 rounded-3xl shadow-md shadow-wudokligthcontrast"
+          >
+            <img
+              src="./img/co-creation.png"
+              alt="co-creation"
+              class="w-1/2 mb-6"
+            />
+            <h3
+              class="text-3xl text-center text-wudokblack dark:text-wudokligth"
+            >
+              Co-creation
+            </h3>
+            <p
+              class="hidden sm:block mt-2 text-xl text-center text-wudokblack dark:text-wudokligthcontrast"
+            >
+              Keep building with us
+            </p>
+            <p
+              class="sm:hidden text-xl mt-2 text-center text-wudokblack dark:text-wudokligthcontrast"
+            >
+              Keep building with us
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border-border-solid border-wudokligth dark:border-wudokligth dark:bg-wudokblack py-6 px-2 rounded-3xl shadow-md shadow-wudokligthcontrast"
+          >
+            <img
+              src="./img/singlemade.png"
+              alt="singlemade"
+              class="w-1/2 mb-6"
+            />
+            <h3
+              class="text-3xl text-center text-wudokblack dark:text-wudokligth"
+            >
+              Made for your needs
+            </h3>
+            <p
+              class="hidden sm:block mt-2 text-xl text-center text-wudokblack dark:text-wudokligthcontrast"
+            >
+              Detail oriented proccess
+            </p>
+            <p
+              class="sm:hidden text-xl mt-2 text-center text-wudokblack dark:text-wudokligthcontrast"
+            >
+              Detail oriented proccess
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr class="mx-auto bg-wudokblack dark:bg-wudokligth w-1/2" />
+
+      <section id="clients" class="p-6 my-12 scroll-mt-20">
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-wudokblack dark:text-wudokligth"
+        >
+          Our Clients
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="bg-wudokligthcontrast dark:bg-wudokligthcontrast pl-14 pr-8 py-12 rounded-3xl shadow-lg shadow-wudokligthcontrast mt-20 relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-wudokblackcontrast dark:text-wudokblack before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Wudok has always been there for me. their company is always
+              present in the proccess as expected.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-wudokligthcontrast dark:text-wudokligth"
+          >
+            &#8212;Integral Agency
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-wudokligthcontrast dark:bg-wudokligthcontrast pl-14 pr-8 py-12 rounded-3xl shadow-lg shadow-wudokligthcontrast mt-20 relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-wudokblackcontrast dark:text-wudokblack before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              The Wudok Adventurer model has helped me build my online
+              application.
+              <span class="italic">This makes me very, very happy!</span> Now i
+              can manage my products and sales from the web based on wudok's
+              quality and sturdy designs.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-wudokligthcontrast dark:text-wudokligth"
+          >
+            &#8212;Remote Client
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-wudokligthcontrast dark:bg-wudokligthcontrast pl-14 pr-8 py-12 rounded-3xl shadow-lg shadow-wudokligthcontrast mt-20 relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-wudokblackcontrast dark:text-wudokblack before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              I knew I not only wanted &#8212;
+              <span class="italic">I needed</span> &#8212; wudok's help to
+              launch my first start up. Wudok delivered in one month!
+              <q class="italic">Take me to world competition </q> like wudok's
+              help.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-wudokligthcontrast dark:text-wudokligth"
+          >
+            &#8212;USA Entrepeneur
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr class="mx-auto bg-wudokblack dark:bg-wudokligth w-1/2" />
+
+      <section id="contact" class="p-6 my-12 scroll-mt-20">
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-wudokblack dark:text-wudokligth"
+        >
+          Contact Us
+        </h2>
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+            class="w-full text-wudokblack text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-wudokblackcontrast dark:border-none"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Your Message"
+            required
+            class="w-full text-wudokblack text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-wudokblackcontrast dark:border-none"
+          ></textarea>
+          <button
+            class="bg-wudokblackcontrast hover:bg-wudokligthcontrast active:bg-wudokligth text-wudokligth p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer id="footer" class="bg-wudokligthcontrast text-wudokligth text-xl">
+      <section
+        class="max-w-4xl font-extralight mx-auto p-4 flex flex-col sm:flex-row sm:justify-between shadow-md shadow-wudokligthcontrast"
+      >
+        <address>
+          <h2>Wudok, Software Developers Inc</h2>
+          Colombia<br />
+          Puerto Colombia, Atlantico<br />
+          Email: <a href="mailto:wudok@wudok.com">Inquires@wudok.com</a><br />
+          Phone: <a href="tel:+575555555555">(555) 555-5555</a>
+        </address>
+        <nav class="md:flex flex-col gap-2" aria-label="footer">
+          <a href="#clients" class="hover:opacity-90">Clients</a>
+          <a href="#about" class="hover:opacity-90">About Us</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="text-right flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
